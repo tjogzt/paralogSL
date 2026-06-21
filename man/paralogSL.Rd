@@ -12,8 +12,8 @@ paralog compensation analysis using DepMap CRISPR dependency data.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/taozhu/paralogSL}
-  \item Report bugs at \url{https://github.com/taozhu/paralogSL/issues}
+  \item \url{https://github.com/tjogzt/paralogSL}
+  \item Report bugs at \url{https://github.com/tjogzt/paralogSL/issues}
 }
 
 }
