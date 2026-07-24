@@ -11,5 +11,8 @@ A data.frame with Method, CV3_AUROC, and Reference columns
 }
 \description{
 Returns the pre-computed CV3 AUROC values from Feng et al. (2024)
-for comparison with DD performance.
+for comparison with DD performance. This-study values (0.794 on the
+lineage-level gyn3 frame; 1.000 for DD + ID >= 0.3) were re-verified
+on 2026-07-25 against compute_headline_metrics.py in the
+paralog_sl_predictor pipeline.
 }

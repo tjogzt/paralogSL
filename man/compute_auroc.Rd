@@ -15,5 +15,10 @@ compute_auroc(results_df, known_pairs)
 The AUROC value
 }
 \description{
-Compute AUROC for DD prediction against known SL pairs
+Ranks pairs by |DD| (absolute Delta Dependency), matching the validation
+convention used throughout the companion manuscript and Python pipeline
+("DD alone, using only |DD|"). With the manuscript sign convention
+(DD = mean WT − mean MUT), a large positive DD indicates compensatory
+dependency in mutant lines; the absolute value additionally credits pairs
+where dependency shifts strongly in either direction.
 }

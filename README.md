@@ -1,5 +1,7 @@
 # paralogSL
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21502114.svg)](https://doi.org/10.5281/zenodo.21502114)
+
 **Paralog-Based Synthetic Lethality Prioritization via Delta Dependency**
 
 An R package for prioritizing paralog-based synthetic lethality (SL) candidates using Delta Dependency (DD) analysis on DepMap Chronos gene-effect data.
@@ -66,8 +68,19 @@ DepMap gene-effect matrix
 
 ## Citation
 
-Zhu T. Delta Dependency Prioritizes Paralog-Based Synthetic Lethality
-Candidates Across Solid Tumor Types. (2026).
+Mo Q, Zhu T. Delta Dependency Prioritizes Paralog-Based Synthetic Lethality
+Candidates Across Solid Tumor Types. *Genome Biology* (2026).
+
+```bibtex
+@article{Mo2026,
+  title   = {Delta Dependency Prioritizes Paralog-Based Synthetic Lethality
+             Candidates Across Solid Tumor Types},
+  author  = {Mo, Qingqing and Zhu, Tao},
+  journal = {Genome Biology},
+  year    = {2026},
+  doi     = {10.5281/zenodo.21502031},
+}
+```
 
 ## License
 

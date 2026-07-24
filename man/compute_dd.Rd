@@ -33,4 +33,8 @@ A list with DD, p_value, cohens_d, and group sizes
 Delta Dependency DD(D, P, c) = mean(G_P | D wild-type) - mean(G_P | D mutant),
 where G is the Chronos gene-effect score. Positive values indicate greater
 paralog dependency in the mutant context (consistent with paralog compensation).
+This matches Equation 1 of the companion manuscript and pcs.py in the
+Python pipeline. The returned p_value is a Welch t-test on the dependency
+scores themselves (distinct from the expression-based test in pcs.py,
+which is exported there as expr_p_value and dd_p_value respectively).
 }

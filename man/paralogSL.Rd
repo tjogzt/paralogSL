@@ -18,6 +18,11 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Tao Zhu \email{taozhu@paralogsl.org}
+\strong{Maintainer}: Tao Zhu \email{zhutao@tjh.tjmu.edu.cn} (\href{https://orcid.org/0009-0001-0779-2245}{ORCID})
+
+Authors:
+\itemize{
+  \item Qingqing Mo
+}
 
 }
