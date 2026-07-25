@@ -174,7 +174,7 @@ This vignette reproduces the core findings from the manuscript:
 > *Delta Dependency Prioritizes Paralog-Based Synthetic Lethality
 > Candidates Across Solid Tumor Types* (Zhu, Genome Biology, 2026)
 
-- DD AUROC = 0.794 (vs best published CV3: 0.720)
+- DD AUROC = 0.794 on a 12-pair evidence-tiered, citation-verified gold standard (best published CV3 contextual reference: 0.790, SLMGAE)
 - DD + 30% identity filter → AUROC = 1.000
 - CPTAC protein co-variation: r = 0.50-0.60 (p < 0.001)
 
