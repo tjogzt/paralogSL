@@ -4,12 +4,19 @@
 \alias{compute_auroc}
 \title{Compute AUROC for DD prediction against known SL pairs}
 \usage{
-compute_auroc(results_df, known_pairs)
+compute_auroc(results_df, known_pairs, tiers = c("A", "B"))
 }
 \arguments{
 \item{results_df}{Results from run_paralog_analysis()}
 
-\item{known_pairs}{data.frame with columns gene_A, gene_B}
+\item{known_pairs}{data.frame with columns gene_A, gene_B; optionally a
+`tier` column (evidence tiers A/B/C/Comparator, see `known_sl_pairs`)}
+
+\item{tiers}{character vector of evidence tiers treated as gold-standard
+positives when `known_pairs` carries a `tier` column. Defaults to the
+manuscript's primary external benchmark (Tier A + Tier B: direct
+dual-perturbation or genotype-conditional genetic evidence). Set to
+`NULL` to use every row of `known_pairs` (the pre-v1.1.0 behavior).}
 }
 \value{
 The AUROC value

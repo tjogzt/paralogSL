@@ -34,5 +34,9 @@ A list with TI, selectivity, pan_essential_frac, classification
 }
 \description{
 Therapeutic Index (TI) = |DD| / max(|mean_G|, pan_essential_fraction, 0.01).
-Classifies paralogs into in vitro selectivity tiers.
+Classifies paralogs into in vitro selectivity tiers. In the manuscript this
+in vitro dependency selectivity score is reported as the dependency window
+score (DWS); the function retains the `TI` field name for backward
+compatibility (identical formula to the Python pipeline's
+`therapeutic_index`).
 }

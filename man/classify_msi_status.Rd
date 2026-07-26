@@ -17,4 +17,9 @@ A named character vector: "MSI_H" or "MSS"
 \description{
 Classifies cell lines as MSI-H (dMMR) or MSS (pMMR) based on
 damaging mutations in MMR genes (MLH1, MSH2, MSH6, PMS2) and POLE.
+This is the manuscript's "MMR/POLE mutation proxy" definition: POLE
+ultramutation is pooled with dMMR here for simplicity, whereas the
+companion Python pipeline additionally reports POLE-mutant lines as a
+separate stratum. Prefer curated DepMap/CCLE MSI annotations when
+available.
 }

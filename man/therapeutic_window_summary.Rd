@@ -3,22 +3,28 @@
 \docType{data}
 \name{therapeutic_window_summary}
 \alias{therapeutic_window_summary}
-\title{Therapeutic Window Summary}
+\title{Therapeutic Window Summary (21-pair DWS classification)}
 \format{
-A data.frame with columns:
+A data.frame with 21 rows and columns:
 \describe{
-  \item{context}{Cancer/tissue context}
-  \item{n_lines}{Number of cell lines}
-  \item{n_pairs}{Number of paralog pairs}
-  \item{n_known}{Number of known SL pairs}
-  \item{n_selective}{Number of selective candidates}
-  \item{n_good_window}{Number with favorable TI}
+  \item{driver}{Driver gene}
+  \item{paralog}{Paralog gene}
+  \item{mean_ti}{Mean DWS/TI across lineages}
+  \item{mean_dd}{Mean |DD| across lineages}
+  \item{mean_selectivity}{Mean essential-fraction difference (MUT - WT)}
+  \item{mean_pan_essential}{Mean pan-essential fraction of the paralog}
+  \item{n_contexts}{Number of evaluable lineage contexts}
+  \item{classification}{HIGH_SELECTIVITY / MODERATE / LOW_SELECTIVITY / PAN_ESSENTIAL}
 }
 }
 \usage{
 therapeutic_window_summary
 }
 \description{
-A data.frame summarizing therapeutic index (TI) metrics across contexts.
+Per-pair dependency window score (DWS; reported as therapeutic index, TI,
+in earlier versions) classification across evaluated lineages, from the
+manuscript's therapeutic-window module (Table S6). Regenerated from
+`therapeutic_window_paralog_classification.csv` in the companion
+analysis repository (paralog-sl-predictor).
 }
 \keyword{datasets}

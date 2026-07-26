@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata from this file."
 type: software
 title: "paralogSL: Paralog-Based Synthetic Lethality Prioritization via Delta Dependency"
-version: 1.0.0
-date-released: 2026-05-25
+version: 1.1.0
+date-released: 2026-07-26
 doi: 10.5281/zenodo.21502114
 authors:
   - family-names: Mo

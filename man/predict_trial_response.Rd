@@ -37,6 +37,7 @@ Combines DD magnitude, therapeutic index, MSI status, and mutation type
 into a composite clinical priority score for trial design.
 }
 \examples{
-predict_trial_response("ARID1A", "ARID1B", dd = 0.267, ti = 4.13,
+# Manuscript Table S6 values for the leading candidate ARID1A->ARID1B
+predict_trial_response("ARID1A", "ARID1B", dd = 0.270, ti = 2.82,
                        msi_status = "MSS", mutation_type = "truncating")
 }

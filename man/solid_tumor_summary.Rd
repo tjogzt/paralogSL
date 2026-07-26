@@ -3,18 +3,25 @@
 \docType{data}
 \name{solid_tumor_summary}
 \alias{solid_tumor_summary}
-\title{Solid Tumor Pan-Cancer Summary}
+\title{Solid Tumor Pan-Cancer Summary (primary frame)}
 \format{
 A data.frame with columns:
 \describe{
   \item{cancer}{Cancer type name}
-  \item{n_lines}{Number of available cell lines}
+  \item{n_lines}{Number of cell lines}
+  \item{n_pairs}{Number of paralog pairs tested}
+  \item{n_known}{Number of known paralog-SL pairs}
+  \item{dd_auroc}{DD AUROC against gold standard (NA when < 2 known positives)}
 }
 }
 \usage{
 solid_tumor_summary
 }
 \description{
-A data.frame of DD AUROC results across 24 solid tumor types.
+Per-lineage DD benchmark results on the manuscript's primary frame
+(minimum 5 mutant and 5 wild-type cell lines per driver-paralog group),
+covering 19 solid tumor lineages; 8 are evaluable (>= 2 known positives)
+and 7 reach AUROC >= 0.7. Regenerated from `solid_tumor_summary.csv` in
+the companion analysis repository (paralog-sl-predictor).
 }
 \keyword{datasets}

@@ -5,10 +5,11 @@
 \alias{benchmark_methods}
 \title{Published SL Method Benchmark (CV3)}
 \format{
-A data.frame with 10 rows and 3 columns:
+A data.frame with 10 rows and 4 columns:
 \describe{
   \item{Method}{Method name}
   \item{CV3_AUROC}{AUROC in the most stringent CV3 setting}
+  \item{Reference}{Source of the value}
   \item{Interpretability}{Whether the method is interpretable}
 }
 }
@@ -17,7 +18,12 @@ benchmark_methods
 }
 \description{
 CV3 (gene-pair isolation) AUROC values from Feng et al. (2024)
-Nature Communications benchmark of 8 SL prediction methods,
-compared with our DD approach.
+Nature Communications benchmark of 8 SL prediction methods, plus
+this-study DD values. Published values are contextual reference points
+from a general SL gene-pair universe, NOT a head-to-head benchmark on
+the same test set; DD was evaluated on paralog-SL pairs only (full
+lineage-level frame, 110 entries / 8 positives, AUROC 0.676; DD + ID
+>= 30% on a 3-pair high-identity subset, 2 positives, AUROC 1.000,
+anecdotal).
 }
 \keyword{datasets}

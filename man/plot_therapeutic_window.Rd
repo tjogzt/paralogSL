@@ -7,13 +7,15 @@
 plot_therapeutic_window(tw_df)
 }
 \arguments{
-\item{tw_df}{A data.frame with columns: driver_paralog, mean_TI,
-selectivity, classification.}
+\item{tw_df}{A data.frame with columns: driver_gene (or driver),
+paralog_gene (or paralog), mean_TI (or mean_ti), classification — e.g.
+the shipped `therapeutic_window_summary` dataset.}
 }
 \value{
 A ggplot2 object.
 }
 \description{
-Visualizes the therapeutic index (TI) and selectivity for paralog-SL
-candidates ranked by preclinical prioritization score.
+Visualizes the dependency window score (DWS; reported as therapeutic
+index, TI, in earlier versions) and selectivity for paralog-SL candidates
+ranked by preclinical prioritization score.
 }

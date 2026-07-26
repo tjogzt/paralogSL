@@ -7,12 +7,15 @@
 get_benchmark_table()
 }
 \value{
-A data.frame with Method, CV3_AUROC, and Reference columns
+A data.frame with Method, CV3_AUROC, Reference, and
+  Interpretability columns
 }
 \description{
-Returns the pre-computed CV3 AUROC values from Feng et al. (2024)
-for comparison with DD performance. This-study values (0.794 on the
-lineage-level gyn3 frame; 1.000 for DD + ID >= 0.3) were re-verified
-on 2026-07-25 against compute_headline_metrics.py in the
-paralog_sl_predictor pipeline.
+Returns the shipped `benchmark_methods` dataset: CV3 AUROC values for 8
+published SL prediction methods from Feng et al. (2024), plus this-study
+DD rows (full lineage-level frame, AUROC 0.676; DD + ID >= 0.3
+high-identity subset, AUROC 1.000, anecdotal). Published values are
+contextual reference points from a general SL gene-pair universe, not a
+head-to-head benchmark. The dataset is regenerated from the canonical
+Table2_Benchmark.tsv artifact of the paralog-sl-predictor pipeline.
 }

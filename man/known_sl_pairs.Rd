@@ -3,19 +3,30 @@
 \docType{data}
 \name{known_sl_pairs}
 \alias{known_sl_pairs}
-\title{Known Paralog-SL Pairs (Gold Standard)}
+\title{Known Paralog-SL Pairs (evidence-tiered gold standard)}
 \format{
-A data.frame with 12 rows and 2 columns:
+A data.frame with 12 rows and columns:
 \describe{
-  \item{gene_A}{First gene in the SL pair}
-  \item{gene_B}{Second gene in the SL pair}
+  \item{gene_A}{Driver gene}
+  \item{gene_B}{Paralog gene}
+  \item{tier}{Evidence tier: A, B, C, or Comparator}
+  \item{direct_sl}{Nature of the direct evidence (Yes / Conditional / Reciprocal / ...)}
+  \item{inclusion}{Benchmark role: Primary / Secondary / Comparator}
+  \item{key_ref}{Key reference(s)}
 }
 }
 \usage{
 known_sl_pairs
 }
 \description{
-A data.frame of 12 literature-curated paralog synthetic lethal pairs
-used as the gold-standard positive set for validation.
+The manuscript's 12 curated pairs with evidence tiers after verification
+of the primary citations (supplementary Table S3). Tier A (3 pairs):
+direct dual-gene perturbation synthetic-lethal evidence. Tier B (2 pairs):
+natural-genotype conditional dependency with functional validation. The
+Tier A + Tier B set constitutes the primary external benchmark used by
+default in `compute_auroc()`. Tier C (5 pairs): indirect evidence only
+(reciprocal-direction-only, other-driver, developmental redundancy, or
+DepMap-derived). Comparators (2 pairs): mechanistic reference pairs that
+are not sequence paralogs, used as specificity references only.
 }
 \keyword{datasets}

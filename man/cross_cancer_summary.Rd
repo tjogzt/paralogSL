@@ -3,7 +3,7 @@
 \docType{data}
 \name{cross_cancer_summary}
 \alias{cross_cancer_summary}
-\title{Cross-Cancer Summary}
+\title{Cross-Cancer Summary (sensitivity frame)}
 \format{
 A data.frame with columns:
 \describe{
@@ -11,13 +11,18 @@ A data.frame with columns:
   \item{n_lines}{Number of cell lines}
   \item{n_pairs}{Number of paralog pairs tested}
   \item{n_known}{Number of known paralog-SL pairs}
-  \item{dd_auroc}{DD AUROC against gold standard}
+  \item{dd_auroc}{DD AUROC against gold standard (NA when < 2 known positives)}
 }
 }
 \usage{
 cross_cancer_summary
 }
 \description{
-A data.frame of gynecological cancer cross-cancer analysis results.
+Per-lineage DD benchmark results on the manuscript's sensitivity frame
+(minimum 3 mutant and 3 wild-type cell lines per driver-paralog group),
+covering 23 solid tumor lineages. Regenerated from
+`solid_tumor_summary_min3.csv` in the companion analysis repository
+(paralog-sl-predictor); 12 lineages are evaluable (>= 2 known positives),
+9 of them with AUROC >= 0.7.
 }
 \keyword{datasets}
