@@ -8,7 +8,7 @@ plot_therapeutic_window(tw_df)
 }
 \arguments{
 \item{tw_df}{A data.frame with columns: driver_gene (or driver),
-paralog_gene (or paralog), mean_TI (or mean_ti), classification — e.g.
+paralog_gene (or paralog), mean_TI (or mean_ti), classification -- e.g.
 the shipped `therapeutic_window_summary` dataset.}
 }
 \value{
