@@ -40,7 +40,7 @@ an in vitro, association-based heuristic: it does not predict clinical
 trial response or a therapeutic window.
 }
 \examples{
-# Manuscript Table S6 values for the leading candidate ARID1A->ARID1B
+# Manuscript Table S5 values for the leading candidate ARID1A->ARID1B
 rank_dependency_candidates("ARID1A", "ARID1B", dd = 0.270, ti = 2.82,
                            msi_status = "MSS", mutation_type = "truncating")
 }

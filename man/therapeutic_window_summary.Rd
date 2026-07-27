@@ -23,7 +23,7 @@ therapeutic_window_summary
 \description{
 Per-pair dependency window score (DWS; reported as therapeutic index, TI,
 in earlier versions) classification across evaluated lineages, from the
-manuscript's therapeutic-window module (Table S6). Regenerated from
+manuscript's therapeutic-window module (Table S5). Regenerated from
 `therapeutic_window_paralog_classification.csv` in the companion
 analysis repository (paralog-sl-predictor).
 }
