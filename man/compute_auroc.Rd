@@ -4,7 +4,12 @@
 \alias{compute_auroc}
 \title{Compute AUROC for DD prediction against known SL pairs}
 \usage{
-compute_auroc(results_df, known_pairs, tiers = c("A", "B"))
+compute_auroc(
+  results_df,
+  known_pairs,
+  tiers = c("A", "B"),
+  score = c("signed", "abs")
+)
 }
 \arguments{
 \item{results_df}{Results from run_paralog_analysis()}
@@ -17,15 +22,18 @@ positives when `known_pairs` carries a `tier` column. Defaults to the
 manuscript's primary external benchmark (Tier A + Tier B: direct
 dual-perturbation or genotype-conditional genetic evidence). Set to
 `NULL` to use every row of `known_pairs` (the pre-v1.1.0 behavior).}
+
+\item{score}{character, \code{"signed"} (default; manuscript primary
+metric) or \code{"abs"} (direction-agnostic sensitivity analysis;
+the pre-v1.1.2 behavior).}
 }
 \value{
 The AUROC value
 }
 \description{
-Ranks pairs by |DD| (absolute Delta Dependency), matching the validation
-convention used throughout the companion manuscript and Python pipeline
-("DD alone, using only |DD|"). With the manuscript sign convention
-(DD = mean WT − mean MUT), a large positive DD indicates compensatory
-dependency in mutant lines; the absolute value additionally credits pairs
-where dependency shifts strongly in either direction.
+Ranks pairs by signed DD, the primary metric of the companion manuscript
+(DD = mean WT − mean MUT; positive values indicate compensatory dependency
+in mutant lines). Use \code{score = "abs"} for the direction-agnostic
+|DD| variant, which additionally credits reverse-direction shifts and is
+reported in the manuscript only as a sensitivity analysis.
 }

@@ -22,7 +22,8 @@ Nature Communications benchmark of 8 SL prediction methods, plus
 this-study DD values. Published values are contextual reference points
 from a general SL gene-pair universe, NOT a head-to-head benchmark on
 the same test set; DD was evaluated on paralog-SL pairs only (full
-lineage-level frame, 110 entries / 8 positives, AUROC 0.676; DD + ID
+lineage-level frame, 110 entries / 8 positives, signed-DD AUROC 0.629;
+DD + ID
 >= 30% on a 3-pair high-identity subset, 2 positives, AUROC 1.000,
 anecdotal).
 }

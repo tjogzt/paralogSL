@@ -11,7 +11,10 @@ A data.frame with columns:
   \item{n_lines}{Number of cell lines}
   \item{n_pairs}{Number of paralog pairs tested}
   \item{n_known}{Number of known paralog-SL pairs}
-  \item{dd_auroc}{DD AUROC against gold standard (NA when < 2 known positives)}
+  \item{dd_auroc}{Signed-DD AUROC against gold standard (NA when < 2 known
+    positives); signed DD is the manuscript's primary metric}
+  \item{dd_auroc_abs_sensitivity}{Direction-agnostic |DD| AUROC (sensitivity
+    analysis, NA when < 2 known positives)}
 }
 }
 \usage{
@@ -23,6 +26,6 @@ Per-lineage DD benchmark results on the manuscript's sensitivity frame
 covering 23 solid tumor lineages. Regenerated from
 `solid_tumor_summary_min3.csv` in the companion analysis repository
 (paralog-sl-predictor); 12 lineages are evaluable (>= 2 known positives),
-9 of them with AUROC >= 0.7.
+6 of them with AUROC >= 0.7 under signed-DD scoring.
 }
 \keyword{datasets}

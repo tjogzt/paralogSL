@@ -13,7 +13,7 @@ A data.frame with Method, CV3_AUROC, Reference, and
 \description{
 Returns the shipped `benchmark_methods` dataset: CV3 AUROC values for 8
 published SL prediction methods from Feng et al. (2024), plus this-study
-DD rows (full lineage-level frame, AUROC 0.676; DD + ID >= 0.3
+DD rows (full lineage-level frame, signed-DD AUROC 0.629; DD + ID >= 0.3
 high-identity subset, AUROC 1.000, anecdotal). Published values are
 contextual reference points from a general SL gene-pair universe, not a
 head-to-head benchmark. The dataset is regenerated from the canonical
